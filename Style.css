@@ -1,0 +1,224 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.food{
+    display:flex;
+}
+#logo img{
+    height:40px;
+    width:40px;
+    margin:4px;
+    border-radius:100%; 
+}
+#navbar{
+    display:flex;
+    align-item:center;
+    position:fixed;
+    width:100%;
+}
+
+#navbar ul{
+    display:flex;
+    
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute ;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.5;
+    
+}
+#navbar li{
+    display:flex;
+    list-style:none ;
+    font-size:1.rem;
+    
+}
+#navbar ul li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    border-radius:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px 7px;
+    padding-left:10px;
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+}
+/*Home section*/
+#home {
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    justify-content:center ;
+    align-item:center;
+}
+#home::before{
+    content:""; background:url('https://us.123rf.com/450wm/milkos/milkos1612/milkos161200361/66960541-healthy-restaurant-food-chef-prepared-diet-daily-meals-delivery-fitness-nutrition-vegetables-meat-an.jpg?ver=6');
+    position:absolute ;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+#home h1{
+    font-size:30px;
+    font-family: 'Dosis', sans-serif;
+    /*font-family: 'Martel', serif;*/
+    text-align:center;
+    margin-bottom:40px;
+    padding-bottom:20px;
+}
+#home p{
+    color:;
+    text-align:center ;
+    font-size:1.2rem;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom:30px;
+}
+.first{
+    font-size:1.5rem;
+    padding:10px;
+}
+
+/*Service section*/
+#service{
+    marginn:20px;
+    display:flex;
+    text-align:center;
+    justify-context:center;
+    flex-direction:column;
+    
+    
+}
+#service .box{
+    border:2px solid red;
+    /*border:2px;
+    border-color:rgb(179, 255, 255);*/
+    border-color:goldenrod;
+    margin:3px 15px;
+    padding:30px;
+    border-radius:20px;
+    background-color:#eaeae1;
+    
+    
+}
+#service .box img{
+    height:80px;
+    margin:auto;
+    padding:10px;
+    display:block;
+    border-radius:40px;
+}
+#service .box p{
+    font-family: 'David Libre', serif;
+    font-size:20px;
+}
+/* Utility Classes */
+.primary{
+    font-family:'Courier Prime', monospace;
+    font-size: 2.2rem;
+    padding: 20px;
+    text-align:center;
+}
+
+.secondary{
+    font-family:'Courier Prime', monospace;
+    font-size: 1.8rem;
+    padding:20px;
+}
+.but{
+    padding:2px 15px;
+    text-align:center;
+    font-size:1.2rem;
+    margin: 10px 110px;
+    background-color:brown;
+    border:2px solid white;
+    color:white;
+    border-radius:10px;
+    display:inline-block ;
+    cursor:pointer ;
+}
+
+.center{
+    text-align: center;
+}
+/*client section*/
+#client-section{
+    height:250px;
+}
+#client-section::before{
+    content:"";
+    position:absolute;  background:url('http://s1.1zoom.net/big3/922/Meat_products_Bread_467633.jpg');
+    background:url('https://c0.wallpaperflare.com/preview/839/412/980/food-and-drink-pizza-pizzas-tomato.jpg');
+    height:200px;
+    width:100%;
+    margin-top:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    z-index:-1;
+    opacity:0.6; 
+}
+#client{
+    display:flex;
+    justify-context:center;
+    align-item:center;
+}
+.client-item{
+    padding:20px;
+    padding-left:15px;
+}
+.client-item img{
+    height:40px;
+}
+#contact{
+    position:relative;
+    height:400px;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%; background:url('https://st2.depositphotos.com/1826664/5444/i/950/depositphotos_54440289-stock-photo-contact-us-background-pattern-blue.jpg');
+    z-index:-1;
+    opacity:0.6;
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-item:center;
+    padding:10px;
+}
+#contact-box input, #contact-box textarea{
+    width:100%;
+    padding:0.2rem;
+    border-radius:0.6rem;
+}
+#contact-box label{
+    font-size:1.2rem;
+    font-family: 'Crimson Text', serif;
+}
+/*Footer     */
+footer{
+    background-color:black;
+    color:white;
+    padding:5px 4px;
+}
+.btn{
+    margin:10px;
+    padding:15px 6px;
+    border-radius:10px;
+    font-family:'Crimson Text', serif;
+    background-color:brown;
+    border-color:4px white;
+    font-size:20px;
+    
+}
